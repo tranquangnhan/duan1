@@ -1,5 +1,6 @@
 <?php 
 require_once "../system/config.php";
+
 //Khởi tạo kết nối
 function getConnection()  {
 $opt = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
