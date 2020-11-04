@@ -80,7 +80,7 @@
   </div>
   </header> 
   <div class="box_header">
-  <div class="baner-gb"></div>
+  <div class="baner-gb position-relative"></div>
   <div class="background-light-grey mr-top58">
     <div class="container">
         <div id="search-filter-2" class="search-filter pull-top-80px z-index-100 position-relative">
