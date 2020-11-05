@@ -10,7 +10,7 @@ $SYSTEM_PATH = "SYSTEM_PATH";
 define ($HOST_DB, "localhost");
 define ($NAME_DB,"datvemaybay");
 define ($USER_DB,"root");
-define ($PASS_DB,"05012001");
+define ($PASS_DB,"05012001");// Nhớ xóa mật khẩu của Hiếu trước khi làm 
 define ($ROOT_URL,"/duan1");
 define ($ADMIN_URL,ROOT_URL."/admin");
 define ($SITE_URL,ROOT_URL."/site");
