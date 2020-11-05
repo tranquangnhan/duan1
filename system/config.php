@@ -8,7 +8,7 @@ $ADMIN_URL ="ADMIN_URL";
 $SITE_URL ="SITE_URL";
 $SYSTEM_PATH = "SYSTEM_PATH";
 define ($HOST_DB, "localhost");
-define ($NAME_DB,"testdb");
+define ($NAME_DB,"datvemaybay");
 define ($USER_DB,"root");
 define ($PASS_DB,"05012001");
 define ($ROOT_URL,"/duan1");
