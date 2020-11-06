@@ -54,7 +54,6 @@ header ul.nav-menu {
     width: 100%;
     height: 555px;
     background-repeat: no-repeat;
-    background-image: url(../img/02fc2-ba_6.jpg);
     background-size: cover;
     background-position: center center;
     opacity: 1;
@@ -247,6 +246,9 @@ a:hover {
 }
 /* padding */
 /* margin */
+.mr-bot-60px {
+    margin-bottom: 60px;
+}
 .mr-bot-15px {
     margin-bottom: 15px;
 }
@@ -284,8 +286,8 @@ a:hover {
 .mr-top_-20 {
     margin-top: -9%;
 }
-.pull-top-80px {
-    margin-top: -80px;
+.pull-top-125px {
+    margin-top: -125px;
 }
 .mr-top-2pt {
     margin-top: 2%;
@@ -394,4 +396,135 @@ a:hover {
 /* boder */
 .icon-fooder>li>a>i {
     color: red;
+}#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-carousel {
+    position: relative;
+
+}
+.box-circle {
+    cursor: pointer;
+    width: 1%;
+    position: absolute;
+    top: 100px;
+    color: white;
+    z-index: 100;
+    right: 37px;
+    font-size: 1vw;
+}
+.owl-dots {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    width: 3px;
+}
+.anim-pn2{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    width: 700px;
+    min-width: 200px;
+    text-align: center;
+    margin-top: 5%;
+}
+.anim1-pn2 {
+    font-size: 3.5vw;
+    padding: 40px 0px;
+    color: rgb(21, 90, 140);
+    font-weight: 100;
+    
+}
+.anim2-pn2 {
+    width: 25%;
+    margin: 0 auto;
+}
+.anim3-pn2 {
+    line-height: 22px;
+    font-weight: 500;
+    color: rgb(28, 28, 28);
+    font-size: 0.9vw;
+    animation-duration: 3s;
+}
+.anim-pn1 {
+    position: absolute;
+    top: 0;
+    right: 38.480779357%;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    animation-duration: 4s;
+}
+.anim1-pn1 {
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgb(190, 14, 62);
+    font-family: Raleway;
+}
+.anim2-pn1 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+    font-family: "Open Sans";
+    animation-duration: 3s;
+}
+.anim3-pn1 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(61, 61, 61);
+    font-family: "Open Sans";
+    max-width: 300px;
+    padding: 35px 0px;
+    animation-duration: 4s;
+}
+.anim4-pn1 {
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    background-color: rgba(243, 190, 78, 0.75);
+    box-sizing: border-box;
+    cursor: pointer;
+    visibility: inherit;
+    margin: 0px;
+    padding: 12px 35px;
+    border: none;
+    animation-duration: 5s;
+}
+.anim-pn3 {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    left: 28.475513428%;
+    margin-top: 10%;
+}
+.anim1-pn3 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    text-transform: capitalize;
+}
+.anim2-pn3 {
+
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #d9d9d9;
+    background: none;   
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffffff;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 13%;
 }
