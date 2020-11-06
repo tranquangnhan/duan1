@@ -37,6 +37,7 @@ header ul.nav-menu {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 25px;
+    opacity: 0.7;
 }
 .box_header {
     width: 100%;
@@ -184,6 +185,7 @@ a:hover {
 .box-map {
     background-color: #eeeded;
     min-height: 500px;
+    margin: 0;
 }
 .map {
     background-image: url(../img/map.png);
