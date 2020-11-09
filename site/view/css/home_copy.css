@@ -1,7 +1,8 @@
 body {
-    font-family: 'Roboto';
+    font-family: Sofia Pro Black,Helvetica Neue,Helvetica,Arial,sans-serif;.navbar-nav>li>a
     font-size: 0.8vw;
     line-height: 23px;
+    background-color: #0065c3;;
 }
 .float-right {
     float: right!important;
@@ -35,11 +36,13 @@ header ul.nav-menu {
 }
 .navbar-nav>li>a {
     font-weight: bold;
-    color: #000;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-right: 25px;
-    opacity: 0.7;
+    color: white;
+}
+.Long_pd-tb-15 {
+    padding: 15px 0px;
 }
 .navbar-nav>li>a:hover {
     color: #1db8c1!important;
@@ -48,13 +51,13 @@ header ul.nav-menu {
     width: 100%;
 }
 .active > a {
-    color: #1db8c1!important;
+   
 }
 .color_main {
-    color: #1db8c1;
+    color: #ffffff;
 }
 .title {
-    color: #F44336; 
+    color: rgb(255, 232, 0);
 }
 .baner-gb {
     width: 100%;
@@ -145,7 +148,7 @@ a:hover {
     border-bottom: solid 1px #fdbe19;
 }
 .background-light-grey {
-    background-color: #FAFAFA;
+    background-color: #0065c3;
 }
 .rating ul {
     max-width: 160px;
@@ -211,7 +214,12 @@ a:hover {
     min-height: 535px;
     margin: 0;
 }
-
+.map {
+    background-image: url(../img/pepsimap.jpg);
+    background-position: left top;
+    width: 100%;
+    background-repeat: no-repeat;
+}
 .light-hight-50px {
     line-height: 50px;
 }
@@ -660,6 +668,13 @@ a:hover {
     background-color: #0065c3;
     border-color: 1px solid #0065c3;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    height: 100%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover {
+    border: none;
+}
 /* lien he */
 .header-out {
     position: relative;
@@ -676,13 +691,4 @@ a:hover {
     opacity: 0.7;
     text-align: center;
     padding: 260px;
-}
-
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: none;
-}
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: none;
 }
