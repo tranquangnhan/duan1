@@ -12,18 +12,15 @@ $(document).ready(function(){
         autoplayTimeout: 10000
     });
     $("#li-khuhoi").click(function(){
-        $("#trove").css("display", "block");
-      });
-      $("#li-motchieu").click(function(){
-        $("#trove").css({"display" : "none"});
-        $( "this" ).removeClass( "background-main-color" );
-
-        
-      });
-      $("#id-nhieudiemden").click(function(){
-        $( "this" ).removeClass( "background-main-color" );
-
-      });
+      $("#trove").css("display", "block");
+    });
+    $("#li-motchieu").click(function(){
+      $("#trove").css({"display" : "none"});
+      $( "this" ).removeClass( "background-main-color" );
+    });
+    $("#id-nhieudiemden").click(function(){
+      $( "this" ).removeClass( "background-main-color" );
+    });
 });
 
 

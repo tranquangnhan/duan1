@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Poppins:300i,400,300,700,400i,500|Ubuntu:300i,400,300,700,400i,500|Raleway:400,500,600,700" rel="stylesheet">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="fontawesome-free-5.13.0-web/css/all.css">
   <title>Dự Án 1</title>
   <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -16,10 +16,10 @@
 </head>
 <body>
   <header>
-    <div class="background-blue-color">
+    <!-- <div class="background-blue-color pd-tb-2px">
       <div class="container">
         <div class="row">
-          <div class="col-sm d-none d-sm-block text-white line_h_28">Modern Creative Website ....</div>
+          <div class="col-sm d-none d-sm-block text-white line_h_28"></div>
           <div class="col-sm">
             <ul class="list-inline text-center margin-0px line_h_28 font-size mr-0">
               <li class="list-inline-item"><a class="facebook text-white" href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -31,14 +31,14 @@
             </ul>
           </div>
           <div class="col-sm d-none d-sm-block line_h_28">
-            <ul class="user-area list-inline float-right margin-0px text-white mr-0">
-              <li class="list-inline-item  padding-right-10px"><a class="text-white" href="page-login-2.html"><i class="fa fa-lock padding-right-5px"></i> login</a></li>
-              <li class="list-inline-item"><a class="text-white" href="page-login-1.html"><i class="fa fa-user-plus padding-right-5px"></i> register</a></li>
+            <ul class="float-right margin-0px text-white mr-0">
+              <li class="list-inline-item  padding-right-10px"><a class="text-white" href="page-login-2.html"><i class="fa fa-lock padding-right-5px"></i> Đăng Ký</a></li>
+              <li class="list-inline-item"><a class="text-white" href="page-login-1.html"><i class="fa fa-user-plus padding-right-5px"></i> Đăng Nhập</a></li>
             </ul>
           </div>
         </div>              
       </div>
-    </div>
+    </div> -->
     <div class="header-output">
       <div class="container header-in">
         <div class="row">
@@ -63,7 +63,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    FILGHT
+                    CHUYẾN BAY
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Flights List View</a>
@@ -76,6 +76,13 @@
                 </li>
                 <li class="nav-item">
                   <a class="pd-0" href="#">TRAVELZ</a>
+                </li>
+                <!-- Thêm đăng ký đăng nhập -->
+                <li class="nav-item">
+                  <a class="" href="#"><i class="fa fa-lock padding-right-5px"></i>ĐĂNG KÝ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="#"><i class="fa fa-user-plus padding-right-5px"></i>ĐĂNG NHẬP</a>
                 </li>
               </ul>                             
             </div>
@@ -105,7 +112,7 @@
                   <div class="anim-pn2">
                     <div class="anim1-pn2 animated fadeInUp">All Day Happy</div>
                     <div class="animate-delay-0p4s anim2-pn2 animated fadeInUp"><img src="img/5saodiscount.png" alt=""></div>
-                    <div class="animate-delay-1s anim3-pn2 animated fadeInUp">info@travlez.com <br>  +222 123 333 019  <br>  usa california build no 10236 </div>
+                    <div class="animate-delay-1s anim3-pn2 animated fadeInUp">travelz@gmail.com <br>  +1900 333 019  <br> Tuần Lễ Vàng muôn vàng giảm giá </div>
                   </div>
                 </div>
                 <div class="owl-item">
@@ -125,12 +132,12 @@
       <div class="container">
         <div id="search-filter-2" class="pull-top-8pt z-index-100 position-relative">
           <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item filght mr-right-1pt" id="li-khuhoi">
-              <a class="nav-link a_filght text-white active show" id="a-khuhoi" data-toggle="tab" href="#home" role="tab"><i class="fas fa-plane-arrival"></i> Chuyến đi khứ hồi</a>
-            </li>
             <li class="nav-item filght mr-right-1pt" id="li-motchieu">
-              <a class="nav-link a_filght text-white" id="a-motchieu" data-toggle="tab" href="#home" role="tab"><i class="fas fa-plane-departure"></i> Một chiều</a>
+              <a class="nav-link a_filght text-white active show" style="border-radius: none;" id="a-motchieu" data-toggle="tab" href="#home" role="tab"><i class="fas fa-plane-departure"></i> Một chiều</a>
             </li>
+            <li class="nav-item filght mr-right-1pt" id="li-khuhoi">
+              <a class="nav-link a_filght text-white " style="border-radius: none;" id="a-khuhoi" data-toggle="tab" href="#home" role="tab"><i class="fas fa-plane-arrival"></i> Chuyến đi khứ hồi</a>
+            </li>            
             <!-- <li class="nav-item filght mr-right-1pt" id="id-nhieudiemden">
               <a class="nav-link a_filght text-white" id="id-nhieudiemden" data-toggle="tab" href="#home" role="tab"><i class="fas fa-plane"></i> Nhiều điểm đến</a>
             </li> -->
@@ -163,7 +170,7 @@
                   <div class="children"><input type="text" class="input-text full-width" placeholder="0"></div>
                 </div>
                 <div class="col-lg-2 mr-0-at">
-                  <a href="#" class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase margin-top-32px padding-7px"> Flight Search</a>
+                  <a href="#" class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase margin-top-32px padding-7px"> TÌM KIẾM</a>
                 </div>
               </div>
             </div>
@@ -180,7 +187,7 @@
       </div>
       <div class="row mr-top-8pt">
         <div class="col-sm-6 col-lg-3 sm-mb-30px te-al-left">
-            <div class="hotel-grid background-white border -1">
+            <div class="hotel-grid background-white max-height-435px">
               <div class="hotel-img">
                   <img src="img/sing.jpg" alt="" width="100%"> 
               </div>
@@ -199,7 +206,7 @@
                   <a href="#" class="cl-grey "><i class="fa fa-map-marker mr-right-5px"></i>
                   <span class="text-third-color mr-right-5px">Cộng hòa Singapore</span><span class="cl-te-black"></span></a>
                 </small>
-                <i class="d-block padding-tb-7px text-grey-2 ">Là quốc gia đô thị hóa cao độ, chỉ còn lại ít thảm thực vật nguyên sinh. Lãnh thổ của Singapore liên tục mở rộng thông qua hoạt động cải tạo đất.</i>
+                <i class="d-block padding-tb-7px text-grey-2 fz-12px">Là quốc gia đô thị hóa cao độ, chỉ còn lại ít thảm thực vật nguyên sinh. Lãnh thổ của Singapore liên tục mở rộng thông qua hoạt động cải tạo đất.</i>
                 <div class="text-uppercase font-small mr-tb-2">
                   <!-- <strong class="font-medium text-third-color mr-right-5px">$500</strong>Person -->
                 </div>
@@ -208,7 +215,7 @@
             </div>
           </div>
         <div class="col-sm-6 col-lg-3 sm-mb-30px">
-        <div class="hotel-grid background-white border -1 te-al-left">
+        <div class="hotel-grid background-white te-al-left max-height-435px">
           <div class="hotel-img">
               <img src="img/lasvegas.jpg" alt="" width="100%">
           </div>
@@ -227,7 +234,7 @@
               <a href="#" class="cl-grey "><i class="fa fa-map-marker mr-right-5px"></i>
               <span class="text-third-color mr-right-5px">Hoa Kỳ</span><span class="cl-te-black">Nevada</span></a>
             </small>
-            <i class="d-block padding-tb-7px text-grey-2 ">Là một thành phổ nghỉ dưỡng, đánh bạc và ẩm thực nổi tiếng thế giới. Las Vegas, tự mệnh danh là Thủ đô giải trí của thế giới</i>
+            <i class="d-block padding-tb-7px text-grey-2 fz-12px">Là một thành phổ nghỉ dưỡng, đánh bạc và ẩm thực nổi tiếng thế giới. Las Vegas, tự mệnh danh là Thủ đô giải trí của thế giới</i>
             <div class="text-uppercase font-small mr-tb-2">
               <!-- <strong class="font-medium text-third-color mr-right-5px">$500</strong>Person -->
             </div>
@@ -236,7 +243,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-lg-3 sm-mb-30px">
-        <div class="hotel-grid background-white border -1 te-al-left">
+        <div class="hotel-grid background-white te-al-left max-height-435px">
           <div class="hotel-img">
             <img src="img/hanquoc.png" alt="" width="100%">
           </div>
@@ -255,7 +262,7 @@
               <a href="#" class="cl-grey "><i class="fa fa-map-marker mr-right-5px"></i>
               <span class="text-third-color mr-right-5px">Đại Hàn Dân Quốc</span><span class="cl-te-black">Seoul</span></a>
             </small>
-            <i class="d-block padding-tb-7px text-grey-2 ">Đây là làng nghề truyền thống ở Seoul bao gồm rất nhiều con hẻm, các ngôi nhà hanok được bảo tồn nguyên vẹn trong đô thị 600 tuổi. </i>
+            <i class="d-block padding-tb-7px text-grey-2 fz-12px">Đây là làng nghề truyền thống ở Seoul bao gồm rất nhiều con hẻm, các ngôi nhà hanok được bảo tồn nguyên vẹn trong đô thị 600 tuổi. </i>
             <div class="text-uppercase font-small mr-tb-2">
               <!-- <strong class="font-medium text-third-color mr-right-5px">$500</strong>Person -->
             </div>
@@ -264,7 +271,7 @@
         </div>
       </div>
       <div class="col-sm-6 col-lg-3 sm-mb-30px">
-        <div class="hotel-grid background-white border -1 te-al-left">
+        <div class="hotel-grid background-white te-al-left max-height-435px">
           <div class="hotel-img">
             <img src="img/nhat-ban.jpg" alt="" width="100%"></div>
             <div class="rating">
@@ -282,7 +289,7 @@
                 <a href="#" class="cl-grey "><i class="fa fa-map-marker mr-right-5px"></i>
                 <span class="text-third-color mr-right-5px">Nhật Bản</span><span class="cl-te-black">Fujiyoshida</span></a>
               </small>
-              <i class="d-block padding-tb-7px text-grey-2 ">Tại đây vào mùa xuân, hoa anh đào nở rộ tạo nên khung cảnh ngoạn mục bao gồm một ngôi chùa năm tầng và hình ảnh núi Phú Sĩ.</i>
+              <i class="d-block padding-tb-7px text-grey-2 fz-12px">Tại đây vào mùa xuân, hoa anh đào nở rộ tạo nên khung cảnh ngoạn mục bao gồm một ngôi chùa năm tầng và hình ảnh núi Phú Sĩ.</i>
               <div class="text-uppercase font-small mr-tb-2">
                   <!-- <strong class="font-medium text-third-color mr-right-5px">$500</strong>Person -->
               </div>
@@ -293,8 +300,8 @@
       </div>
     </div>
     <div class="row box-map">
-      <div class="map pd-t-100px">
-        <div class="container">
+      <!-- <div class="map pd-t-100px"> -->
+        <div class="container pd-t-100px">
           <div class="row justify-content-end">
             <div class="col-lg-8 te-al-left">
               <div class="section-title-left mr-bot-60px">
@@ -358,7 +365,7 @@
             </div>              
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="background-light-grey W-100 pd-t-100px pd-bot-50px">
       <div class="container pd-bot-80px">
@@ -377,7 +384,7 @@
                 <span class="fz-07 mr-right-30px">By : <a href="#" class="color_main">Rabie Elkheir</a></span>
                 <span class="fz-07">Date :  <a href="#" class="color_main">July 15, 2020</a></span>
               </div>
-              <div class="clearfix"></div>
+              <!-- <div class="clearfix"></div> -->
             </div>
             <div class="news-cart background-white border mr-bottom-35px">
               <div class="float-sm-left mr-right-30px box-img-news">
@@ -388,7 +395,7 @@
                 <span class="fz-07 mr-right-30px">By : <a href="#" class="color_main">Linh Pham</a></span>
                 <span class="fz-07">Date :  <a href="#" class="color_main">July 15, 2020</a></span>
               </div>
-              <div class="clearfix"></div>
+              <!-- <div class="clearfix"></div> -->
             </div>
           </div>
           <div class="col-lg-6 te-al-left">
@@ -401,37 +408,36 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active background-white padding-30px border">
                         <div class="sayer-img float-left mr-right-20px"><img src="img/avt-1.jpg" alt=""></div>
                         <h5 class="text-medium cl-te-black text-uppercase">Rabie Elkheir</h5>
-                        <i class="text-extra-small">Travel to <span class="color_main">Turkey</span></i>
-                        <div class="clearfix"></div>
-                        <i class="d-block mr-tb-20px text-medium text-grey-4">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. </i>
+                        <i class="text-extra-small">Chức vụ: <span class="color_main">Quản lý</span></i>
+                        <!-- <div class="clearfix"></div> -->
+                        <i class="d-block mr-tb-20px text-medium text-grey-4">Với những thứ tốt nhất có thể. Chúng tôi đưa bạn đến những nơi xa xôi trên mảnh Đất Việt này và chúng tôi cam kết. Ở đâu rẻ hơn, chúng tôi hoàn tiền </i>
                 </div>
                 <div class="carousel-item background-white padding-30px border">
                       <div class="sayer-img float-left mr-right-20px"><img src="img/avt-2.png" alt=""></div>
-                      <h5 class="text-medium cl-te-black text-uppercase">Rabie Elkheir</h5>
-                      <i class="text-extra-small">Travel to <span class="color_main">Turkey</span></i>
-                      <div class="clearfix"></div>
-                      <i class="d-block mr-tb-20px text-medium text-grey-4">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. </i>
+                      <h5 class="text-medium cl-te-black text-uppercase">Mark Zuckerberg</h5>
+                      <i class="text-extra-small">Chức vụ: <span class="color_main">Quản lý</span></i>
+                      <!-- <div class="clearfix"></div> -->
+                      <i class="d-block mr-tb-20px text-medium text-grey-4">Nếu bạn có thắc mắc về thông tin, giá vé hay bất cứ gì. Hãy liên hệ với chúng tôi ngay, chúng tôi có người giải đáp cho bạn ngay hoặc là lâu nhất là 24H. Xin cảm ơn!</i>
                 </div>
                 <div class="carousel-item background-white padding-30px border">
                       <div class="sayer-img float-left mr-right-20px"><img src="img/avt-3.png" alt=""></div>
-                      <h5 class="text-medium cl-te-black text-uppercase">Rabie Elkheir</h5>
-                      <i class="text-extra-small">Travel to <span class="color_main">Turkey</span></i>
-                      <div class="clearfix"></div>
-                      <i class="d-block mr-tb-20px text-medium text-grey-4">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. </i>
+                      <h5 class="text-medium cl-te-black text-uppercase">Nguyên Nhất Cương</h5>
+                      <i class="text-extra-small">Chức vụ: <span class="color_main">Quản lý nhân sự</span></i>
+                      <!-- <div class="clearfix"></div> -->
+                      <i class="d-block mr-tb-20px text-medium text-grey-4">Các bạn đang tìm một công việc tốt? Làm việc văn phòng máy lạnh sẽ giúp bạn có tinh thần tốt hơn. Hãy đến với ngôi nhà chung của chúng tôi. Liên hệ 0983232323</i>
                 </div>
-                <div class="carousel-item background-white padding-30px border">
+                <!-- <div class="carousel-item background-white padding-30px border">
                   <div class="sayer-img float-left mr-right-20px"><img src="img/avt-4.png" alt=""></div>
                   <h5 class="text-medium cl-te-black text-uppercase">Rabie Elkheir</h5>
                   <i class="text-extra-small">Travel to <span class="color_main">Turkey</span></i>
-                  <div class="clearfix"></div>
-                  <i class="d-block mr-tb-20px text-medium text-grey-4">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida at, accumsan bibendum tincidunt imperdiet. </i>
-                </div>
+                   <div class="clearfix"></div>
+                  <i class="d-block mr-tb-20px text-medium text-grey-4">. </i>
+                </div> -->
               </div>
               <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                 <span class="" aria-hidden="true"><i class="fas fa-chevron-left fz-2vw"></i></span>
@@ -554,7 +560,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 </body>
 </html>
