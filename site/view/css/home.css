@@ -796,6 +796,20 @@ a:hover {
 .background-grey-1 {
     background-color: #eeeded;
 }
+.l-box-travelzsay {
+    width: 30%;
+    margin-right: 4.726%;
+    max-height: 260px;
+    padding: 30px;
+    background-color: white;
+    display: inline-block;
+}
+.line-hight-28 {
+    line-height: 28px;
+}
+.l-box-our {
+    background-color: white;
+}
 /* css trang home  */
 #trove {
     display: none;
@@ -871,8 +885,16 @@ a:hover {
 }
 .l-box-ud:hover {
     z-index: 1;
-    transform: scale(1.25);
+    transform: scale(1.05);
     box-shadow: 0 25px 40px rgba(0, 0, 0, .5)
+}
+.l-ud-giam-gia {
+    transition: 0.5s;
+    transform: translateY(250px);
+}
+.l-box-ud:hover .l-ud-giam-gia {
+    color: #F44336;    
+    transform: translateY(0px);
 }
 .l-box-ud-img {
     position: absolute;
@@ -919,6 +941,21 @@ a:hover {
 }
 .l-thongtin-ud h2 {
     text-transform: uppercase;
+}
+.l-thongtin-ud p {
+    transform: translateY(250px);
+    transition: 0.3s;
+}
+.l-thongtin-ud:hover p {
+    transform: translateY(0px);
+}
+.l-thongtin-ud .l-ud-date-flight {
+    transform: translateY(250px);
+    transition: 0.3s;
+    transition-delay: 0.3s ;
+}
+.l-thongtin-ud:hover .l-ud-date-flight {
+    transform: translateY(0px);
 }
 .l-button-ud {
     font-size: 0.7vw;
