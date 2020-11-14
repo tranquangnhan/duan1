@@ -1,0 +1,210 @@
+
+.theiaStickySidebar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.d-block {
+    display: block!important;
+}
+/* mau */
+.dtext-main-color {
+    color: #1db8c1;
+}
+.dbg-lightgrey{
+    background-color: #FAFAFA;
+}
+.dbackground-white {
+    background-color: #fff;
+}
+/* noidung  */
+.border-grey-1 {
+    border-color: #eeeded !important;
+}
+.border-1 {
+    border: solid 1px;
+}
+/* margin padding border */
+.margin-bottom-35px {
+    margin-bottom: 35px;
+}
+.margin-right-20px {
+    margin-right: 20px;
+}
+.text-extra-small {
+    font-size: 11px;
+    line-height: 14px;
+}
+.padding-tb-40px  {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.padding-30px{
+    padding:30px;
+}
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+.margin-bottom-15px {
+    margin-bottom: 15px;
+}
+.margin-bottom-20px{
+    margin-bottom: 20px;
+}
+.margin-bottom-30px{
+    margin-bottom: 30px;
+}
+.margin-left-55px{
+    margin-left: 55px;
+}
+/* TEXT */
+.dtext-extra-small {
+    font-size: 11px;
+    line-height: 14px;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.text-large {
+    font-size: 18px;
+    line-height: 26px;
+}
+.text-dark {
+    color: #212121;
+}
+.text-dark {
+    color: #343a40!important;
+}
+.text-capitalize {
+    text-transform: capitalize!important;
+}
+.text-up-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.fz15px{
+    font-size: 15px;
+}
+h4.table-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #1db8c1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+h4.table-title:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: #eeeded;
+}
+h4.table-title span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+    background-color: #fff;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+
+.border-bottom-1{
+    border-bottom: solid 1px;
+}
+
+.border-grey-1 {
+    border-color: #eeeded !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* dinh dang cho IMG */
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.float-left{
+    float: left;
+}
+
+.img100{
+    width:80px;
+}
+
+
+/* form */
+.form-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+label {
+    display: inline-block;
+    margin-bottom: 10px!important;
+    margin-top: 10px!important;
+}
+/* nhap binh luan */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+/* stickey */
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 500px;
+    height: 800px;
+  }
+.cha{
+    height: 1800px;
+}
