@@ -21,10 +21,10 @@ $(document).ready(function(){
       center:true,
     });
     $(window).scroll(function(){ 
-      if ($(this).scrollTop() > 100) { 
-          $('#l-menu-fixed').fadeIn();  
+      if ($(this).scrollTop() > 50) { 
+          $('#l-menu-fixed').show();  
       } else { 
-          $('#l-menu-fixed').css("display", "none");
+          $('#l-menu-fixed').hide();
       } 
     }); 
     $(window).scroll(function(){ 
@@ -39,16 +39,16 @@ $(document).ready(function(){
         scrollTop: 0 }, 500)
       return false; 
     }); 
-    // $("#li-khuhoi").click(function(){
-    //   $("#trove").css("display", "block");
-    // });
-    // $("#li-motchieu").click(function(){
-    //   $("#trove").css({"display" : "none"});
-    //   $( "this" ).removeClass( "background-main-color" );
-    // });
-    // $("#id-nhieudiemden").click(function(){
-    //   $( "this" ).removeClass( "background-main-color" );
-    // });
+    $("#li-khuhoi").click(function(){
+      $("#trove").css("display", "block");
+    });
+    $("#li-motchieu").click(function(){
+      $("#trove").css({"display" : "none"});
+      $( "this" ).removeClass( "background-main-color" );
+    });
+    $("#id-nhieudiemden").click(function(){
+      $( "this" ).removeClass( "background-main-color" );
+    });
     // $( ".l-box-ud" ).hover(
     //   function() {
     //     $(".bt-datve ").show();
