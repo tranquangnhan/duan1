@@ -956,7 +956,23 @@ a:hover {
 
 
 /* trang about us  */
+<<<<<<< HEAD
 
+=======
+.div-icon {
+    width: 10%;
+    height: 10%;
+    border: 1px solid #1db8c1;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+.l-pd-5px-10px {
+    padding: 5px 10px;
+}
+.l-border-1px-gray {
+    border: 1px solid;
+}
+>>>>>>> 976c4148180e4d751752e1374a30da8bbd15d114
 .long-ab-us-header-out {
     position: relative;
     z-index: 10;
@@ -1028,6 +1044,7 @@ a:hover {
 
 .l-box-our {
     background-color: white;
+    border: 1px solid gray
 }
 
 
@@ -1225,4 +1242,65 @@ a:hover {
 
 .l-thongtin-ud p span {
     text-decoration: line-through;
+}
+
+/* chon ghe */
+main {
+    padding: 100px 0px;
+}
+.l-phothong {
+    width: 400px;
+    height: auto;
+    border: 1px solid gray;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.l-ghe-phothong {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 80px;
+    margin: 10px 2px;
+    height: auto;
+    text-align: center;
+    background-color:#1db8c1;
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.l-mr-right {
+    margin-right: 10%;
+}
+.l-thuonggia {
+    width: 400px;
+    height: auto;
+    border: 1px solid gray;
+    margin: 0 auto;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+
+.l-ghe-thuonggia {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 80px;
+    margin: 10px 2px;
+    height: auto;
+    text-align: center;
+    background-color:#fff022;
+    cursor: pointer;
+    transition: 0.2s ;
+}
+.l-mr-right {
+    margin-right: 10%;
+}
+.l-div-hover:hover {
+    background-color: rgb(255, 51, 51);
+    opacity: 0.7;
+}
+.l-bg-gray {
+    background-color: rgb(204, 204, 204)!important;
+    cursor: default!important;
+}
+.l-ghe-active {
+    background-color: rgb(255, 51, 51);
 }

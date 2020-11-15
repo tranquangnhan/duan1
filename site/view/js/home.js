@@ -49,15 +49,41 @@ $(document).ready(function(){
     $("#id-nhieudiemden").click(function(){
       $( "this" ).removeClass( "background-main-color" );
     });
-    // $( ".l-box-ud" ).hover(
-    //   function() {
-    //     $(".bt-datve ").show();
-    //   }, function(){
-    //   $(".bt-datve").hide();
-    // });
+    console.log($(".ghe-phothong").text());
 });
-
-
-
-
-
+// var biendoi = 0;
+// $(".l-ghe-thuonggia").click(function() {
+//   if (biendoi == 0) {
+//     biendoi++;
+//     $(this).addClass('l-ghe-active');
+//     $(this).removeClass('l-div-hover');
+//   } else {
+//      $(this).removeClass('l-ghe-active');
+//      $(this).addClass('l-div-hover');
+//      biendoi = 0;
+//   }
+// });
+$(".l-ghe-thuonggia").click(function () {
+  clicked = true;
+  if (clicked) {
+    $(this).toggleClass('l-ghe-active');
+    $(this).removeClass('l-div-hover');
+    clicked = true;
+  } else {
+    $(this).removeClass('l-ghe-active');
+    $(this).toggleClass('l-div-hover');
+    clicked = false;
+  }
+});
+$(".l-ghe-phothong").click(function () {
+  clicked = true;
+  if (clicked) {
+    $(this).toggleClass('l-ghe-active');
+    $(this).removeClass('l-div-hover');
+    clicked = true;
+  } else {
+    $(this).removeClass('l-ghe-active');
+    $(this).toggleClass('l-div-hover');
+    clicked = false;
+  }
+});
