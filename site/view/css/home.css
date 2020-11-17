@@ -785,12 +785,6 @@ a:hover {
     font-family: Raleway;
     text-transform: capitalize;
 }
-<<<<<<< HEAD
-=======
-
-.anim2-pn3 {}
-
->>>>>>> 40fd467cb6dd71fdf699c985d871081f6a6039e3
 .owl-theme .owl-dots .owl-dot span {
     width: 15px;
     height: 15px;
@@ -954,10 +948,7 @@ a:hover {
     font-size: 4vw;
     opacity: 0.8;
     padding: 20px;
-<<<<<<< HEAD
     font-weight: 600;
-=======
->>>>>>> 40fd467cb6dd71fdf699c985d871081f6a6039e3
 }
 
 
@@ -1307,7 +1298,9 @@ a:hover {
     min-height: 500px;
     border: 8px solid rgb(247, 247, 247);
     padding: 25px;
-    
+    overflow: auto;
+    overflow-x: auto;
+    max-height: 2500px;
 }
 .l-phothong {
     width: 100%;
@@ -1387,7 +1380,7 @@ a:hover {
 }
 .l-position-absolute-top-1900 {
     position: absolute;
-    top: 2200px;
+    top: 2000px;
 }
 .l-box-room {
     width: 44%;
@@ -1414,6 +1407,20 @@ a:hover {
     font-size: 1vw;
     height: 70px;
     max-height: 70px;
+}
+
+.l-chu-thich-fixed {
+    padding: 20px;
+    padding-bottom: 0px;
+    position: fixed;
+    width: 27%;
+    right: 100px;
+    z-index: 100;
+    top: 100;
+    top: 100px;
+    /* background: white; */
+    opacity: 0.8;
+    display: none;
 }
 .l-css-box-color {
     width: 17%;

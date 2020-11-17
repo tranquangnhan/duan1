@@ -65,12 +65,19 @@ $(document).ready(function(){
       $( "this" ).removeClass( "background-main-color" );
     });
     $(window).scroll(function(){ 
-      if ($(this).scrollTop() > 2000) { 
+      if ($(this).scrollTop() > 1800) { 
         $(".l-canh-phai").addClass("l-position-absolute-top-1900");
         $(".l-canh-trai").addClass("l-position-absolute-top-1900");
       } else { 
         $(".l-canh-phai").removeClass("l-position-absolute-top-1900");
         $(".l-canh-trai").removeClass("l-position-absolute-top-1900");
+      } 
+    });
+    $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 350) { 
+        $('.l-chu-thich-fixed').fadeIn(100);
+      } else { 
+        $('.l-chu-thich-fixed').fadeOut(100);      
       } 
     });
 });
