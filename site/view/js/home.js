@@ -66,13 +66,23 @@ $(document).ready(function(){
     });
     $(window).scroll(function(){ 
       if ($(this).scrollTop() > 1800) { 
-        $(".l-canh-phai").addClass("l-position-absolute-top-1900");
-        $(".l-canh-trai").addClass("l-position-absolute-top-1900");
+        $(".l-canh-phai").addClass("l-position-absolute-top-2000");
+        $(".l-canh-trai").addClass("l-position-absolute-top-2000");
+        $(".l-chu-thich-fixed").addClass("l-position-absolute-top-1860");
       } else { 
-        $(".l-canh-phai").removeClass("l-position-absolute-top-1900");
-        $(".l-canh-trai").removeClass("l-position-absolute-top-1900");
+        $(".l-canh-phai").removeClass("l-position-absolute-top-2000");
+        $(".l-canh-trai").removeClass("l-position-absolute-top-2000");
+        $(".l-chu-thich-fixed").removeClass("l-position-absolute-top-1860");
       } 
     });
+    // $(window).scroll(function(){ 
+    //   if ($(this).scrollTop() > 1900) { 
+    //     $(".l-chu-thich-fixed").addClass("dl-none");
+    //     console.log("1");
+    //   } else { 
+    //     $(".l-chu-thich-fixed").removeClass("dl-none");
+    //   } 
+    // });
     $(window).scroll(function(){ 
       if ($(this).scrollTop() > 350) { 
         $('.l-chu-thich-fixed').fadeIn(100);
