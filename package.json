@@ -1,0 +1,31 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat web ",
+  "main": "index.js",
+  "scripts": {
+    "test": "chat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranquangnhan/duan1.git"
+  },
+  "keywords": [
+    "chat",
+    "web",
+    "nodejs"
+  ],
+  "author": "datcute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranquangnhan/duan1/issues"
+  },
+  "homepage": "https://github.com/tranquangnhan/duan1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

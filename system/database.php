@@ -4,7 +4,7 @@ require_once "../system/config.php";
 //Khởi tạo kết nối
 function getConnection()  {
 $opt = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-$conn = new PDO('mysql:host='.HOST_DB.';dbname='.NAME_DB,USER_DB, PASS_DB,$opt);
+$conn = new PDO('mysql:host='.'HOST_DB'.';dbname='.'NAME_DB','USER_DB', 'PASS_DB',$opt);
 return $conn;
 }
 function query($sql)

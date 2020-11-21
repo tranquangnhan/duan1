@@ -1,0 +1,5 @@
+{
+    "require": {
+        "Pusher/Pusher-php-server": "^4.1"
+    }
+}
