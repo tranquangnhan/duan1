@@ -99,7 +99,13 @@ img-in {
     margin-left: 0px;
     position: relative;
     height: 50px;
+    border-radius: none;
 }
 .tr{
     float: right;
 }
+
+.bg{
+    background-color: black;
+}
+

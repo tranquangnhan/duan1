@@ -43,9 +43,10 @@
                                                     <span  class="uppercase cus mar">thông tin Chuyến bay</span>
                                                 </div>
                                                 <div class="box">
-                                                    <strong>Ngày khởi hành:</strong> ############# <br>
-                                                    <strong>Thời gian đi: </strong> ? dia diem <br>
-                                                    <strong>Thời gian đến: </strong> ? dia diem<br>
+                                                    <strong>Tên khách hàng:</strong> Nguyễn Quốc Hiếu <br>
+                                                    <strong>Ngày khởi hành:</strong> 18/6/2021 <br>
+                                                    <strong>Thời gian đi: </strong> 23:11 PM <br>
+                                                    <strong>Thời gian đến: </strong> 7:00 AM<br>
                                                 
                                                     <strong>Hãng:</strong> bamboo airline
                                                 </div>
@@ -66,9 +67,9 @@
                                         <div class="row no-gutters">
  
                                             <!-- col7 -->
-                                            <div class="col-lg-12 " style="min-width:120%">
+                                            <div class="col-lg-12 " style="min-width:380px">
                                                 <div class="animated-gradient" style="color: white; height: 30px; font-weight: 700 ;">
-                                                    <span  class="uppercase  mar">thông tin Chuyến bay</span>
+                                                    <span  class="uppercase  mar">hành lý</span>
                                                 </div>
                                                 <div class=" cus2" >
                                                     Nguyễn Quốc Hiếu 15kg
@@ -88,9 +89,10 @@
                         <div class="col-lg-4 col-md-4 sticky-sidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
                                 <div class="widget">
                                        <img src="hcm.jpg" alt="">
-                                       <button type="button" class=" btn">Hà Nội đến Hồ Chí Minh</button>
-                                       <p>Tổng tiền: <strong class="tr">892,488 VNĐ</strong></p>
+                                       <div class="btn">Hà Nội đến Hồ Chí Minh</div>
+                                       <p style="margin-top: 10px;">Tổng tiền: <strong class="tr">892,488 VNĐ</strong></p>
                                 </div>
+                        
                         </div>
                     </div>
                 </div>
