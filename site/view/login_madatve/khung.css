@@ -1,0 +1,105 @@
+.theiaStickySidebar {
+    content: "";
+    display: table;
+    clear: both;
+}
+.border-grey-1 {
+    border-color: #eeeded !important;
+}
+.border-1 {
+    border: solid 1px;
+}
+.margin-bottom-35px {
+    margin-bottom: 35px;
+}
+.background-white {
+    background-color: #fff;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+img {
+    max-width: 100%;
+}
+img-in {
+    vertical-align: middle;
+    border-style: none;
+    width: 150px;
+    height: 300px;
+
+
+}
+.padding{
+    padding: 15px;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+.margin-bottom-8px {
+    margin-bottom: 8px;
+}
+.text-up-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+.text-dark {
+    color: #212121;
+}
+.text-dark {
+    color: #343a40!important;
+}
+.text-capitalize {
+    text-transform: capitalize!important;
+}
+.d-block {
+    display: block!important;
+}
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+.text-up-small {
+    font-size: 14px;
+    line-height: 22px;
+}
+.text-grey-2 {
+    color: #9E9E9E;
+}
+.d-block {
+    display: block!important;
+}
+.margin-top{
+    margin-top: 50px;
+}
+
+.cus{
+    text-align: center;
+    letter-spacing: 3px;
+   
+}
+
+.box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.cus2{
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.btn{
+    width: 100%;
+    background-color: darkgrey;
+    margin-left: 0px;
+    position: relative;
+    height: 50px;
+}
+.tr{
+    float: right;
+}

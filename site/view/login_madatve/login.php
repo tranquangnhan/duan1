@@ -26,17 +26,6 @@
 </head>
 
 <body>
-    <section class="bg-gradient-primary padding-tb-35px text-grey-4">
-        <div class="container">
-            <h4 class="login text-uppercase float-left font-2">Log in</h4>
-            <ol class="breadcrumb z-index-2 position-relative no-background padding-tb-10px padding-lr-0px  margin-0px float-md-right">
-                <li><a href="#" class="text-grey-4">Home</a></li>
-                <li><a href="#" class="text-grey-4">pages</a></li>
-                <li class="active">Login</li>
-            </ol>
-            <div class="clearfix"></div>
-        </div>
-    </section>
     <!-- // Page title --->
 
     <section class="background-light-grey padding-tb-100px text-center text-lg-left">
@@ -48,11 +37,11 @@
                         <form action="login_submit.php" method="POST">
                             <table>
                             <div class="form-group">
-                                <label for="user" class="col-form-label"><strong>Username or Email</strong></label>
-                                <input type="text" class="form-control rounded-0" id="user" name="user">
+                                <label for="user" class="col-form-label"><strong>Nhập tên của bạn</strong></label>
+                                <input type="text" class="form-control rounded-0" id="user" name="user" >
                             </div>
                             <div class="form-group">
-                                <label for="sodienthoai" class="col-form-label"><strong>Username or Email</strong></label>
+                                <label for="sodienthoai" class="col-form-label"><strong>Số điện thoại</strong></label>
                                 <input type="number" class="form-control rounded-0" id="sodienthoai" name="sodienthoai">
                             </div>
                             <div class="form-group">
@@ -65,18 +54,18 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div style="margin-top:37px" class="col-lg-4 col-md-6">
                     <div class="margin-bottom-20px margin-top-20px">
                  
-                        <i class="fa fa-lock" aria-hidden="true"></i> <strong class="text-uppercase">Sign up Now</strong>
-                        <span class="d-block text-grey-2">By signing up you accept our <a href="#" class="text-grey-2">Terms of service</a></span>
+                        <i class="fa fa-lock" aria-hidden="true"></i> <strong class="text-uppercase">Tìm vé nhanh chóng</strong>
+                        <span class="d-block text-grey-2">Nhập thông tin vào để tìm vé hoặc tìm <a href="#" class="text-grey-2" style="text-decoration: underline; color:red">tại đây</a></span>
                     </div>
 
                     <div class="margin-bottom-15px padding-bottom-15px border-bottom-1 border-grey-2">
-                        <i class=" margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase">Recover my password</strong>
-                        <span class="d-block"><a href="#" class="text-grey-2">Have you found an error</a></span>
+                        <i class=" margin-right-10px" aria-hidden="true"></i> <strong class="text-uppercase">Bạn muốn tìm thông tin?</strong>
+                        <span class="d-block"><a href="#" class="text-grey-2">Để chúng tôi giúp đỡ bạn ...</a></span>
                     </div>
-                    <p class="text-grey-2">Mauris fermentum porta sem, non hendrerit enim bibendum consectetur. Fusce diam est, porttitor vehicula gravida faucibus, varius ante sit amet. </p>
+                    <p class="text-grey-2" >     Với kinh nghiệm làm về lĩnh vực hàng không trong 99 năm chúng tôi tin chắc sẽ đem lại cho các bạn trải nghiệm khó quên và đẳng cấp nhất  </p>
                 </div>
 
             </div>
@@ -164,6 +153,15 @@
         </div>
 
     </footer>
+    <!-- ajax -->
+    <script>
+        $("#user").keyup(function (e) { //user types username on inputfiled
+        var username = $(this).val(); //get the string typed by user
+        $.post('checkusername.php', {'user':user}, function(data) { //make ajax call to check_username.php
+        $("#user-result").html(data); //dump the data received from PHP page
+        });
+    });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -172,3 +170,5 @@
 </body>
 
 </html>
+
+
