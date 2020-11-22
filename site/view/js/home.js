@@ -7,19 +7,34 @@ $(document).ready(function(){
         items:1,
         loop: true,
         mouseDrag: false,
-
         autoplay: true,
-
         autoplayTimeout: 10000
     });
     var slide1 = $('#owl-2');
     slide1.owlCarousel({
       loop:true,
       margin:30,
-      items: 4,
+      items: 1,
       nav:true,
       center:true,
     });
+    var slide_chonghe = $('#owl-chonghe');
+        slide_chonghe.owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:10
+              }
+          }
+      });
     $(window).scroll(function(){ 
       if ($(this).scrollTop() > 50) { 
           $('#l-menu-fixed').show();  
@@ -49,20 +64,34 @@ $(document).ready(function(){
     $("#id-nhieudiemden").click(function(){
       $( "this" ).removeClass( "background-main-color" );
     });
-    console.log($(".ghe-phothong").text());
+    $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 1800) { 
+        $(".l-canh-phai").addClass("l-position-absolute-top-2000");
+        $(".l-canh-trai").addClass("l-position-absolute-top-2000");
+        $(".l-chu-thich-fixed").addClass("l-position-absolute-top-1860");
+      } else { 
+        $(".l-canh-phai").removeClass("l-position-absolute-top-2000");
+        $(".l-canh-trai").removeClass("l-position-absolute-top-2000");
+        $(".l-chu-thich-fixed").removeClass("l-position-absolute-top-1860");
+      } 
+    });
+    // $(window).scroll(function(){ 
+    //   if ($(this).scrollTop() > 1900) { 
+    //     $(".l-chu-thich-fixed").addClass("dl-none");
+    //     console.log("1");
+    //   } else { 
+    //     $(".l-chu-thich-fixed").removeClass("dl-none");
+    //   } 
+    // });
+    $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 350) { 
+        $('.l-chu-thich-fixed').fadeIn(100);
+      } else { 
+        $('.l-chu-thich-fixed').fadeOut(100);      
+      } 
+    });
 });
-// var biendoi = 0;
-// $(".l-ghe-thuonggia").click(function() {
-//   if (biendoi == 0) {
-//     biendoi++;
-//     $(this).addClass('l-ghe-active');
-//     $(this).removeClass('l-div-hover');
-//   } else {
-//      $(this).removeClass('l-ghe-active');
-//      $(this).addClass('l-div-hover');
-//      biendoi = 0;
-//   }
-// });
+//  đổi màu khi chọn ghế
 $(".l-ghe-thuonggia").click(function () {
   clicked = true;
   if (clicked) {
@@ -86,4 +115,11 @@ $(".l-ghe-phothong").click(function () {
     $(this).toggleClass('l-div-hover');
     clicked = false;
   }
+});
+
+// animation logo trang tổng hợp vé
+$( ".l-box-logo" ).mouseenter(function() {
+  console.log('1');
+}).mouseleave(function() {
+  console.log('2');
 });

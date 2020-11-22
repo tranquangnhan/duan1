@@ -1,6 +1,6 @@
 main {
     width: 100%;
-    font-family: 'roboto';
+    font-family: 'Open Sans', sans-serif;
 }
 .cl-grey1 {
     color: #000000;
@@ -77,8 +77,8 @@ header {
 .border-radius-2 {
     border-radius: 2px;
 }   
-.font-family-poppins {
-    font-family: "Poppins";
+.font-family-sans-serif {
+    font-family: 'Open Sans', sans-serif;
 }
 .fz-1vw {
     font-size: 1vw;
@@ -115,3 +115,46 @@ header {
 .fz-0p7rem {
     font-size: 0.7rem;
 }
+.l-ip-checkbox {
+    width: 20px;
+}
+.line-height-150px {
+    line-height: 150px;
+}
+.l-box-logo {
+    position: relative;
+    outline: 0;
+    overflow: 0;
+}
+/* .l-box-animate {
+    position: absolute;
+    left: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #FAFAFA;
+    border-radius: 45%;
+    animation-name: spin;
+    animation-duration: 10s;
+    z-index: 1;
+    display: none;
+} */
+/* .l-box-logo:hover::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    bottom: 150%;
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+    border-radius: 45%;
+    animation-name: spin;
+    animation-duration: 10s;
+    z-index: 1;
+}
+@keyframes spin {
+ 
+}
+.z-index-100 {
+    z-index: 100;
+} */
