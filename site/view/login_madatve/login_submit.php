@@ -1,20 +1,24 @@
 <?php 
-session_start();
+    // b1 
+        session_start();
 
-    include "conn.php";
+    include "config.php";
 
-    if(isset($_POST['submit']) && $_POST['user'] != '' && $_POST['sodienthoai'] != ''){
+    if(isset($_POST["submit"]) && $_POST["user"] != '' && $_POST["sodienthoai"] != '') {
         $user = $_POST["user"];
+       
         $sodienthoai = $_POST["sodienthoai"];
       
-    $sql = "SELECT * FROM khachhang WHERE user='$user' AND sodienthoai='$sodienthoai' ";
-    $khachhang = mysqli_query($connect,$sql);
-    if(mysqli_num_rows($khachhang) > 0)  {
-        $_SESSION["khachhang"] = $user;
+       
+        $sql = "SELECT * FROM khachhang WHERE user='$user' AND sodienthoai='$sodienthoai' ";
+        $khachhang = mysqli_query($conn, $sql);
+        if(mysqli_num_rows($khachhang) > 0){
+            $_SESSION["khachhang"] = $user;
+            header("location: index.php");
+        }else{
+            echo "that bai ";
+        }
     }else{
-        echo "nhap sai mk va username";
-    }
-}else{
-    header("location: login.php");
+        header("location: login.php");
     }
 ?>

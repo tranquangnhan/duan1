@@ -3,6 +3,7 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -44,18 +45,22 @@
 
                 <div class="col-lg-4">
                     <div class="padding-30px background-white border-1 border-grey-1">
-
-                        <form method="POST" action="login_submit.php">
+                        <form action="login_submit.php" method="POST">
+                            <table>
                             <div class="form-group">
-                                <label for="user" class="col-form-label"><strong>Tên khách hàng</strong></label>
-                                <input type="text" class="form-control rounded-0" id="user" placeholder="">
+                                <label for="user" class="col-form-label"><strong>Username or Email</strong></label>
+                                <input type="text" class="form-control rounded-0" id="user" name="user">
                             </div>
                             <div class="form-group">
-                                <label for="sdt" class="col-form-label"><strong>Số điện thoại</strong></label>
-                                <input type="number" class="form-control rounded-0" id="sodienthoai" placeholder="">
+                                <label for="sodienthoai" class="col-form-label"><strong>Username or Email</strong></label>
+                                <input type="number" class="form-control rounded-0" id="sodienthoai" name="sodienthoai">
                             </div>
-                            <button type="submit" > Sign in</button>
-                 
+                            <div class="form-group">
+                                <label for="submit" class="col-form-label"></label>
+                                <input type="submit" class="form-control rounded-0 btn btn-primary btn-block rounded-0 background-main-color" id="submit" name="submit">
+                            </div>
+     
+                            </table>
                         </form>
                     </div>
                 </div>
