@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')   {
         'cluster' => 'ap1',
         'useTLS' => true
       );
-      $pusher = new Pusher\Pusher(
+      $pusher = new pusher\pusher(
         '51b7e75a2e62e47ca3c7',
         '22b2f72d561e26b804ee',
         '1110165',
